@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:local="http://schemas.android.com/apk/res/points.on.grid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    local:MvxBind="TranslationX X, Converter=X;TranslationY Y, Converter=Y"
+  >
+  <LinearLayout
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    local:MvxBind="BackgroundColor Color, Converter=NativeColor"
+  />
+  
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    local:MvxBind="Text Player"
+    />
+    
+</LinearLayout>
