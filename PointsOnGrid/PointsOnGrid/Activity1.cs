@@ -143,10 +143,10 @@ namespace PointsOnGrid
         }
     }
 
-    [Obsolete("I'm using AbsoluteLayout - if you must use something else because of API version, then use RelativeLayout?")]
-    public class BindableAbsoluteLayout : FrameLayout
+    public class BindableFrameLayout : FrameLayout
     {
-        public BindableAbsoluteLayout(Context context, IAttributeSet attrs) : base(context, attrs)
+        public BindableFrameLayout(Context context, IAttributeSet attrs)
+            : base(context, attrs)
         {
             var itemTemplateId = MvxListViewHelpers.ReadAttributeValue(context, attrs,
                                                                        MvxAndroidBindingResource.Instance
